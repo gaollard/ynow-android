@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ButtonActivity">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_gravity=""
+        android:textSize="10pt"
+        android:text="自定义内部类" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_gravity=""
+        android:textSize="10pt"
+        android:text="匿名内部类" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_gravity=""
+        android:textSize="10pt"
+        android:text="当前Activity去实现事件接口" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_gravity=""
+        android:textSize="10pt"
+        android:text="在布局文件中添加点击事件属性" />
+</LinearLayout>
