@@ -9,18 +9,6 @@
     android:gravity="center_horizontal"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="登录" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="欢迎来到语锲社区" />
-
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -28,21 +16,36 @@
         android:layout_gravity="center"
         android:src="@mipmap/ic_launcher"/>
 
-    <EditText
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"/>
+        android:text="欢迎来到语锲社区, 请先登录" />
 
     <EditText
+        android:id="@+id/edtName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"/>
+        android:layout_marginRight="30dp"
+        android:text=""
+        android:inputType="number"
+        android:hint="登录账户" />
+
+    <EditText
+        android:id="@+id/edtPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:inputType="number"
+        android:text=""
+        android:hint="登录密码"/>
 
     <Button
+        android:id="@+id/btnSubmit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
@@ -50,8 +53,16 @@
         android:layout_marginTop="30dp"
         android:background="@color/colorPrimary"
         android:textColor="#ffffff"
-        android:layout_gravity=""
         android:textSize="10pt"
-        android:text="立即登录" />
+        android:text="立即登录"
+        android:onClick="onClickSubmit"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:progress="50"
+        android:id="@+id/process_01"
+        android:visibility="invisible"/>
 
 </LinearLayout>
