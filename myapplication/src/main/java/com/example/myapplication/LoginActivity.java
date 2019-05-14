@@ -28,19 +28,19 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this, "用户名或密码不能为空", Toast.LENGTH_LONG).show();
         } else {
             process_01.setVisibility(View.VISIBLE);
-            new Thread() {
-                @Override
-                public void run() {
-                    for (int index = 0; index < 100; index++) {
-                        try {
-                            process_01.setProgress(index);
-                            Thread.sleep(30);
-                        } catch ( InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }
-            }.start();
+//            new Thread() {
+//                @Override
+//                public void run() {
+//                    for (int index = 0; index < 100; index++) {
+//                        try {
+//                            process_01.setProgress(index);
+//                            Thread.sleep(30);
+//                        } catch ( InterruptedException e) {
+//                            e.printStackTrace();
+//                        }
+//                    }
+//                }
+//            }.start();
         }
     }
 }

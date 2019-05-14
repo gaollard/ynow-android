@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    android:shrinkColumns="*"
+    tools:context=".TableLayoutActivity">
+
+    <!--
+        1. 在表格中的控件是不需要设置宽和高的
+        2. 表格中的控件会与父容器等宽
+        3. 在TableRow中的控件宽度默认是  wrap_content
+        4. 设置可伸缩列 stretchColumns
+        5. 设置可伸展列 shrinkColumns
+        6. 设置可隐藏列 collapseColumns
+    -->
+    <TableRow>
+        <Button
+            android:text="71111111"/>
+        <Button
+            android:text="8"/>
+        <Button
+            android:text="9"/>
+        <Button
+            android:text="/"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="4"/>
+        <Button
+            android:text="5"/>
+        <Button
+            android:text="6"/>
+        <Button
+            android:text="*"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="1"/>
+        <Button
+            android:text="2"/>
+        <Button
+            android:text="3"/>
+        <Button
+            android:text="-"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="0"/>
+        <Button
+            android:text="."/>
+        <Button
+            android:text="+"/>
+        <Button
+            android:text="="/>
+    </TableRow>
+    <Button
+        android:text="clear" />
+</TableLayout>
