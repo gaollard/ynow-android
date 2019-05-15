@@ -17,18 +17,21 @@
         <activity android:name=".ButtonActivity" />
         <activity android:name=".ImageViewActivity" />
         <activity android:name=".ProgressBarActivity" />
-        <activity android:name=".LinearLayoutActivity"></activity>
+        <activity android:name=".LinearLayoutActivity" />
         <activity android:name=".RelativeLayoutActivity" />
         <activity android:name=".LayoutActivity" />
         <activity android:name=".FrameLayoutActivity" />
         <activity android:name=".TableLayoutActivity" />
         <activity android:name=".GridLayoutActivity" />
-        <activity android:name=".ConstraintLayoutActivity">
+        <activity android:name=".ConstraintLayoutActivity" />
+        <activity android:name=".CheckBoxActivity" />
+        <activity android:name=".ContextMenuActivity" />
+        <activity android:name=".PopupMenuActivity"></activity>
+        <activity android:name=".MenuCreateActivity">
         </activity>
-        <activity android:name=".CheckBoxActivity">
+        <activity android:name=".DialogActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
