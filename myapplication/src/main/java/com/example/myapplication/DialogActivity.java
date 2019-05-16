@@ -4,7 +4,9 @@ import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.PopupWindow;
 
 public class DialogActivity extends AppCompatActivity {
 
@@ -29,6 +31,24 @@ public class DialogActivity extends AppCompatActivity {
                 builder.setNegativeButton("取消", null);
                 builder.show();
                 break;
+            case R.id.button4:
+                MyDialog myDialog = new MyDialog(this, R.style.myDialog);
+                myDialog.show();
+                break;
+            case R.id.popup_btn:
+                showPopupWindow(v);
+                break;
         }
+    }
+
+    public void showPopupWindow(View v) {
+        // 准备视图对象
+        View view = LayoutInflater.from(this).inflate(R.layout.popup_window_layout, null);
+        // 设置宽高
+        PopupWindow popupWindow = new PopupWindow(view, 200, 400, true);
+        // 设置动画
+
+        popupWindow.setOutsideTouchable(true);
+        popupWindow.showAsDropDown(v);
     }
 }

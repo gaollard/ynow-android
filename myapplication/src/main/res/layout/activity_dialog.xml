@@ -11,7 +11,25 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Button3"
+        android:onClick="myClick"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="95dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button4"
+        android:onClick="myClick"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="95dp" />
+
+    <Button
+        android:id="@+id/popup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="popup_btn"
         android:onClick="myClick"
         tools:layout_editor_absoluteX="129dp"
         tools:layout_editor_absoluteY="95dp" />
