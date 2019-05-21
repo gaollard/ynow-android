@@ -47,7 +47,6 @@ public class DialogActivity extends AppCompatActivity {
         // 设置宽高
         PopupWindow popupWindow = new PopupWindow(view, 200, 400, true);
         // 设置动画
-
         popupWindow.setOutsideTouchable(true);
         popupWindow.showAsDropDown(v);
     }

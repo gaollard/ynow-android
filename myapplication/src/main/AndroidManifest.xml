@@ -29,14 +29,17 @@
         <activity android:name=".PopupMenuActivity" />
         <activity android:name=".MenuCreateActivity" />
         <activity android:name=".DialogActivity">
+        </activity>
+        <activity android:name=".Dialog2Activity" />
+        <activity android:name=".PopupWindowActivity" />
+        <activity android:name=".StaticLoadFragmentActivity"/>
+        <activity android:name=".FragmentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Dialog2Activity" />
-        <activity android:name=".PopupWindowActivity"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#da1010"
+    >
+    <!--<TextView-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textColor="#fff"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:text="activity_static_load_fragment" />-->
+
+    <fragment
+        android:name="com.example.myapplication.ListFragment"
+        android:id="@+id/listFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></fragment>
+</LinearLayout>
